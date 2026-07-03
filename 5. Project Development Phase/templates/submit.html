@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Prediction Result</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 
 <body>
 
-<h1>{{ prediction }}</h1>
+<div class="result-container">
 
-<br>
+    <div class="result-card">
 
-<a href="/predict">Predict Another Loan</a>
+        <h1>Prediction Result</h1>
+
+        <h2>{{ prediction }}</h2>
+
+        <br>
+
+        <a href="/predict" class="btn">
+            Predict Another Loan
+        </a>
+
+        <br><br>
+
+        <a href="/" class="home-btn">
+            Back to Home
+        </a>
+
+    </div>
+
+</div>
 
 </body>
+
 </html>
