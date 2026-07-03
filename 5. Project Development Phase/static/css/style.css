@@ -1,0 +1,262 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0F4C81,#4A90E2);
+    min-height:100vh;
+}
+
+/* ================= HOME PAGE ================= */
+
+.hero{
+    width:100%;
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:700px;
+    background:rgba(255,255,255,.95);
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+    animation:fadeIn 1s ease;
+}
+
+.card h1{
+    color:#1565C0;
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#333;
+    margin-bottom:20px;
+}
+
+.card p{
+    color:#555;
+    line-height:32px;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#1565C0;
+    color:white;
+    padding:15px 40px;
+    border-radius:8px;
+    font-size:20px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0D47A1;
+    transform:translateY(-3px);
+}
+
+/* ================= FORM PAGE ================= */
+
+.form-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.form-card{
+    width:900px;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 35px rgba(0,0,0,.3);
+}
+
+.form-card h1{
+    text-align:center;
+    color:#1565C0;
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.input-box{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-box label{
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#333;
+}
+
+.input-box input,
+.input-box select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+}
+
+.input-box input:focus,
+.input-box select:focus{
+    border-color:#1565C0;
+    box-shadow:0 0 8px rgba(21,101,192,.3);
+}
+
+.predict-btn{
+    width:100%;
+    margin-top:30px;
+    padding:15px;
+    border:none;
+    background:#1565C0;
+    color:white;
+    font-size:20px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.predict-btn:hover{
+    background:#0D47A1;
+}
+/* ================= RESULT PAGE ================= */
+
+.result-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    padding:20px;
+}
+
+.result-card{
+    background:#ffffff;
+    width:500px;
+    text-align:center;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    animation:fadeIn .8s ease-in-out;
+}
+
+.result-card h1{
+    color:#1565C0;
+    margin-bottom:20px;
+    font-size:36px;
+}
+
+.result-card h2{
+    font-size:30px;
+    margin:25px 0;
+    color:#222;
+}
+
+.home-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#28a745;
+    color:white;
+    padding:14px 35px;
+    border-radius:8px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.home-btn:hover{
+    background:#218838;
+    transform:translateY(-3px);
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .form-card{
+        width:95%;
+        padding:25px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        width:90%;
+        padding:30px;
+    }
+
+    .card h1{
+        font-size:38px;
+    }
+
+    .card h2{
+        font-size:24px;
+    }
+
+    .card p{
+        font-size:16px;
+        line-height:28px;
+    }
+
+    .result-card{
+        width:90%;
+        padding:35px;
+    }
+
+    .result-card h1{
+        font-size:28px;
+    }
+
+    .result-card h2{
+        font-size:24px;
+    }
+
+    .btn,
+    .home-btn,
+    .predict-btn{
+        width:100%;
+    }
+
+}
