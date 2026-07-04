@@ -38,9 +38,10 @@ Smart-Lender/
 │   ├── home.html
 │   ├── predict.html
 │   └── submit.html
-│
+│--- Static/
+|    |--tyle.css
 └── dataset/
-    └── loan_prediction.csv
+    └── train.csv
 ```
 
 ## Dataset
@@ -114,4 +115,4 @@ http://127.0.0.1:5000/
 
 ## Author
 
-Anil Kumar
+P.Appa rao
