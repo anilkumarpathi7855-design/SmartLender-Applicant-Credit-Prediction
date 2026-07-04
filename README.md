@@ -115,5 +115,3 @@ http://127.0.0.1:5000/
 ## Author
 
 Anil Kumar
-
-This project is developed for educational purposes.
