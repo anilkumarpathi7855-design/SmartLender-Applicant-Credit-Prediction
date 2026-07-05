@@ -30,7 +30,7 @@ Smart-Lender/
 │
 ├── app.py
 ├── loan_model.ipynb
-├── loan_model.pkl
+├── rdf.pkl
 ├── requirements.txt
 ├── README.md
 │
