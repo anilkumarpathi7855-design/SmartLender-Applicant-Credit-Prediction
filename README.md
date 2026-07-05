@@ -39,7 +39,7 @@ Smart-Lender/
 │   ├── predict.html
 │   └── submit.html
 │--- Static/
-|    |--tyle.css
+|    |--style.css
 └── dataset/
     └── train.csv
 ```
