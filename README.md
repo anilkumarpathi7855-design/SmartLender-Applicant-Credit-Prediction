@@ -63,7 +63,7 @@ The project uses the Loan Prediction dataset containing applicant details such a
 
 ## Machine Learning Model
 
-The loan prediction model is trained using supervised machine learning techniques. After preprocessing and training, the model is saved as `loan_model.pkl` and used by the Flask application to generate predictions.
+The loan prediction model is trained using supervised machine learning techniques. After preprocessing and training, the model is saved as `rdf.pkl` and used by the Flask application to generate predictions.
 
 ## Installation
 
